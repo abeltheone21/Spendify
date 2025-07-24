@@ -1,76 +1,51 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>expense tracker project</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
 
- </head>
-    <body>
-       <button onclick="toggleDarkMode()" class="dark-mode-btn">
-            <i class="fas fa-moon"></i> 
-         </button>
+  <!-- Dark Mode Toggle -->
+  <button class="dark-mode-btn">
+    <i class="fas fa-moon"></i>
+  </button>
 
-       
-     <div class="flex-contenner">
-        <div class="left-side">
-        <div class="budgetsec gradiunt">
-            <h3>addbudget</h3>
-            
-            <input type="number" placeholder="budget" class="csinput js-addbudget">
+  <div class="flex-contenner">
+    <!-- Left Side -->
+    <div class="left-side">
+      <!-- Budget Section -->
+      <div class="budgetsec gradiunt">
+        <h3>Add Budget</h3>
+        <input type="number" placeholder="Budget" class="csinput js-addbudget">
+        <button class="csaddbtn js-budget-btn">Add</button>
+        <p class="display-budget">Budget: 0.00 $</p>
+      </div>
 
-            <button class="csaddbtn" onclick="
-           budgetGet();
-            ">add</button>
+      <!-- Product Section -->
+      <div class="input-section gradiunt">
+        <h3>Product Name</h3>
+        <input type="text" placeholder="Add product name" class="csinput js-productname">
+        <h3>and Price:</h3>
+        <input type="number" placeholder="Price" class="csinput js-productprice">
+        <button class="addBtn csaddbtn js-product-btn">Add</button>
+        <h3 class="product-Count">Total products: 0</h3>
+      </div>
+    </div>
 
-            <p class="display-budget"></p>
-        </div>
-            <div class="input-section gradiunt">
+    <!-- Cart Section -->
+    <div class="list-section gradiunt">
+      <h2>Cart</h2>
+      <ul class="itemList gradiunt"></ul>
+      <button class="clearBtn csaddbtn js-clear-btn">Clear All</button>
+    </div>
+  </div>
 
-                <h3>product name</h3>
-
-              <input type="text" placeholder="Add product name"  class="csinput js-productname" >
-              <h3> and price :</h3>
-
-              <input type="number" placeholder="Price"  class="csinput js-productprice" >
-
-              <button class="addBtn csaddbtn" onclick="
-              
-              productpricename();
-              ">Add</button>
-
-              <h3 class="product-Count"></h3>
-            </div>
-
-            </div>
-            
-            <div class="list-section gradiunt">
-                <h2>cart</h2>
-
-              <ul class="itemList gradiunt">
-              
-              </ul>
-              <button class="clearBtn csaddbtn" onclick="
-              document.querySelector('.itemList ').innerhtml='';
-              ">Clear all</button>
-            </div>
-          
-        </div>
-        <div calss="display-graph">
-        
-        </div>
-        
-
-
-
-           
-         
-          
-        
-
- <script src="interaction.js"></script>
-    </body>
+  <script src="interaction.js"></script>
+</body>
 </html>
