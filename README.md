@@ -13,4 +13,4 @@ Features include:
 
 ### . Responsive design for all devices
 
-## Spendify ##helps you take control of your finances with a clean, intuitive interface — perfect for daily budgeting and spending awareness.
+ Spendify helps you take control of your finances with a clean, intuitive interface — perfect for daily budgeting and spending awareness.
