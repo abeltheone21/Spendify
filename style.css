@@ -1,0 +1,189 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9f1f7;
+  color: #102a43;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Layout Container */
+.flex-contenner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  min-height: 100vh;
+  padding: 100px 20px 20px;
+}
+
+/* Left Side Panel */
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Box Sections */
+.input-section,
+.list-section,
+.display-graph,
+.budgetsec {
+  border-radius: 16px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+/* Inputs */
+.styled-input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: #f0f4f8;
+  color: #102a43;
+}
+
+.styled-input::placeholder {
+  color: #486581;
+}
+
+/* Buttons */
+.styled-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2196f3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.styled-button:hover {
+  background: #1976d2;
+}
+
+.total-display {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.list-section {
+  flex: 2;
+  min-width: 300px;
+}
+
+.display-graph {
+  flex: 2;
+  min-width: 400px;
+  min-height: 250px;
+}
+
+.budgetsec,
+.input-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Custom Buttons & Inputs */
+.csinput {
+  background: #f0f4f8;
+  border-radius: 5px;
+  border: none;
+  color: #102a43;
+}
+
+.csaddbtn {
+  background: #2196f3;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+.deletcss {
+  background: #bbdefb;
+  color: #0d3a66;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode Theme */
+.dark-mode {
+  background-color: #121e26;
+  color: #dbeafe;
+}
+
+.dark-mode .dark-mode-btn {
+  background-color: #1e2a34;
+  color: #dbeafe;
+}
+
+.dark-mode .input-section,
+.dark-mode .list-section,
+.dark-mode .display-graph,
+.dark-mode .budgetsec {
+  background-color: #1e2a34;
+}
+
+.dark-mode .styled-input {
+  background: #273643;
+  color: #dbeafe;
+}
+
+.dark-mode .styled-input::placeholder {
+  color: #9fb3c8;
+}
+
+.dark-mode .styled-button,
+.dark-mode .csaddbtn {
+  background: #64b5f6;
+  color: #fff;
+}
+
+.dark-mode .deletcss {
+  background: #4fc3f7;
+  color: #002f49;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+  .dark-mode-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .flex-contenner {
+    padding-top: 120px;
+  }
+}
